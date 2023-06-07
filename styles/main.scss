@@ -1,0 +1,135 @@
+// text primary
+$veryDarkDesaturatedBlue: #1d1e35;
+$softRed: hsl(14, 88%, 65%);
+// gradient
+$softViolet: #af67e9;
+$softBlue: #6565e7;
+// text neutral
+$veryDarkGrayishBlue: #4a4b5e;
+$darkGrayishBlue: #787887;
+// dividers
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+// --------------------------------------------------------
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.4rem;
+    background: rgb(101, 101, 231);
+    background: linear-gradient(0deg, rgba(101, 101, 231, 1) 31%, rgba(175, 103, 233, 1) 93%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+p{
+    font-size: 1.3rem;
+    color: $darkGrayishBlue;
+}
+
+main{
+    background-color: #fff;
+    border-radius: 2.4rem;
+    width: 100%;
+    min-height: 45rem;
+    max-width: 90rem;
+}
+// ---------------------------------
+figure{
+    width: 32.7rem;
+    position: relative;
+    margin: auto;
+    height: 20rem;
+    transform: translateY(-11.1rem);
+}
+
+figure > *{
+    width: 75%;
+}
+
+.woman-online-mobile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-pattern-mobile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.2rem;
+}
+// ----------------------------------
+.content{
+    transform: translateY(-7rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2.4rem;
+}
+
+h1{
+    font-size: 3.2rem;
+    color: $veryDarkDesaturatedBlue;
+    margin-bottom: 2.4rem;
+}
+
+.resp{
+    padding-top: 1.6rem ;
+}
+
+.questions-container{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.question{
+    width: 100%;
+    border-bottom: .1rem solid $lightGrayishBlue;
+    padding: 1.6rem 0 ;
+    height: 4.9rem;
+    overflow:hidden;
+}
+
+.ask{
+    position: relative;
+    transition: all .4s ease;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1rem;
+        height: .7rem;
+        transform: translateY(-50%);
+        background-color: transparent;
+        background-image: url('../images/icon-arrow-down.svg');
+    }
+
+    &:hover{
+        color: $softRed;
+        cursor: pointer;
+    }
+}
+
+.teste{
+    font-size: 2.2rem;
+    color: red;
+}
